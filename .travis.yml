@@ -1,4 +1,0 @@
-language: generic
-sudo: required
-script:
-- bash runme.sh
