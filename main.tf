@@ -18,3 +18,8 @@ resource "kubernetes_namespace" "example" {
     name = "sentinel-test"
   }
 }
+resource "github_repository" "example" {
+  name        = "sentinel-test"
+  description = "Repo to reproduce cost estimation skip"
+  visibility  = "private"
+}
