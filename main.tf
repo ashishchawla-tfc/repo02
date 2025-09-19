@@ -13,3 +13,8 @@ resource "null_resource" "example" {
     var_value = var.example_var
   }
 }
+resource "kubernetes_namespace" "example" {
+  metadata {
+    name = "sentinel-test"
+  }
+}
